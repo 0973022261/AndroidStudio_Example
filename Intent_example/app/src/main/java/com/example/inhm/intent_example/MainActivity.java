@@ -32,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onButton2Clicked(View v) {
         Intent intent = new Intent(getApplicationContext(),MenuActivity.class);
+
+        intent.putExtra("title", "안드로이드 연습");
         startActivityForResult(intent,REQ_MENU);
+
+
     }
 }
